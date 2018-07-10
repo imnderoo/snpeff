@@ -11,10 +11,11 @@ LABEL license="http://snpeff.sourceforge.net/"
 LABEL tags="Genomics"
 
 RUN conda install -c bioconda snpeff=4.3.1t
+RUN conda install -c bioconda snpsift=4.3.1t
 
 USER root
 
 WORKDIR /data/
 
-ENTRYPOINT ["snpEff"]
+CMD ["snpEff"]
 
