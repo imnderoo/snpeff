@@ -16,5 +16,5 @@ USER root
 
 WORKDIR /data/
 
-ENTRYPOINT ["snpeff"]
+ENTRYPOINT ["snpEff"]
 
